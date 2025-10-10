@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+header{
+    background-color: #ffb6e4;
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px ;
+
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 0px;
+}
+.logo{
+    text-decoration: none;
+    color: #f8f9fa;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+
+}
+.navigation a{
+   text-decoration: none;
+   color: #f8f9fa; 
+   font-weight: 500;
+   font-size: 1.1em;
+   padding-left: 20px;
+}
+.navigation a:hover{
+    color: #dc0d90;
+}
+section{
+
+    padding: 90px 130px;
+}
+.main{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    background: url(خلفية_بورتفوليو_تقنية_حديثة.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2{
+    color: #3f132f;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.main h2 span{
+    color: #dc0d90;
+    font-size: 2.6em;
+    font-weight: 600;
+    font-family: "poppins";
+    display: inline-block;
+    margin-top: 10px;
+
+}
+.main h3{
+
+    color: #3f132f;
+    font-size: 1.6em;
+    font-weight: 700;
+    margin: 10px 0 30px 0;
+    letter-spacing: 1px;
+
+}
+.main_botton{
+color: #f8f9fa;
+background-color: #830956;
+text-decoration: none;
+padding: 0.9375em 2.187em;
+letter-spacing: 1px;
+margin-bottom: 40px;
+font-size: 1.1em;
+font-weight: 600;
+display: inline-block;
+border-radius: 15px;
+transition: .7s ease;
+}
+.main_botton:hover{
+background-color: #dc0d90;
+transform: scale(1.1);
+}
+.social-media a{
+ color:#3c0a3c;
+ font-size:1.7em;
+ padding-right: 30px;
+ text-decoration: none;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: #970d64;
+    font-weight: 800;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+.card{
+    background-color: #e394cf;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgb(144, 104, 141);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: .7s ease;
+    background-color:#ac529b ;
+}
+.info{
+    color: #f8f9fa;
+    text-align: center;
+    font-size: 1em;
+    
+}
+
+.info h3{
+    font-size: 2em;
+    font-weight: 700;
+    margin: 10px;
+    padding: 0 10px ;
+}
+.icon{
+    color: #3f132f;
+    font-size: 6em;
+    text-align: center;
+
+    
+}
+/*.project{
+
+}*/
+form {
+    max-width: 500px; 
+    margin: 50px auto; 
+    padding: 20px;
+    background-color: #d287c4; 
+    border-radius: 8px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+center {
+    display: block;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+input, textarea {
+    width: 100%;  
+    padding: 10px;
+    margin: 4px 0 ;
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+textarea {
+    height: 120px; 
+    resize: vertical; 
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #3f132f; 
+    color: white; 
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: #a12c89;
+    transform: scale(1.1);
+    transition: .7s ease;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #888; 
+    font-size: small;
+}
+
+/* Focus styles for inputs */
+input:focus, textarea:focus {
+    border-color: #cb07ae; 
+    outline: none; 
+}
+input:focus::placeholder, textarea:focus::placeholder {
+    color: transparent; 
+}
