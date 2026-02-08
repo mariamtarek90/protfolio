@@ -219,3 +219,110 @@ input:focus, textarea:focus {
 input:focus::placeholder, textarea:focus::placeholder {
     color: transparent; 
 }
+
+/*    //////////////////////////////////////////////////////////////////////////////////   */
+
+/* Projects Section */
+.projects-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(144, 104, 141, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(144, 104, 141, 0.3);
+}
+
+.project-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.1);
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    color: #3f132f;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.project-info p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.project-tech span {
+    background-color: #ffb6e4;
+    color: #3f132f;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #dc0d90;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #3f132f;
+}
+/* في CSS */
+.project-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.project-card:hover .project-image::before {
+    left: 100%;
+}
+
+
